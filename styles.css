@@ -290,3 +290,59 @@ h1 {
     }
 
 }
+
+@media (max-width: 900px) {
+  .projetos-caixa {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projetos-caixa {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .cabecalho-sub-titulo {
+    font-size: 1rem;
+  }
+
+  .sobre-paragrafo,
+  .paragrafo-projetos {
+    font-size: 1rem;
+  }
+
+  .menu {
+    gap: 1rem;
+  }
+
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.menu {
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Corrija essas declarações para: */
+
+.menu-link::after {
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+}
+
+.botao-form {
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+}
+
+.sobre-caixa {
+    backdrop-filter: blur(10px);
+}
